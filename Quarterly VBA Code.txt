@@ -1,0 +1,21 @@
+'Determine Fiscal Quarter
+
+strCurrentQuarter = Format(Now, "mmdd")
+strCurrentYear = Format(Now, "yyyy")
+txtYear = strCurrentYear
+
+If strCurrentQuarter > "0101" And strCurrentQuarter < "0331" Then
+    txtQuarter = "1st Quarter"
+End If
+
+If strCurrentQuarter > "0401" And strCurrentQuarter < "0630" Then
+    txtQuarter = "2nd Quarter"
+End If
+
+If strCurrentQuarter > "0701" And strCurrentQuarter < "0930" Then
+    txtQuarter = "3rd Quarter"
+End If
+
+If strCurrentQuarter > "1001" And strCurrentQuarter < "1231" Then
+    txtQuarter = "4th Quarter"
+End If
